@@ -2,7 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 dotenv.config()
 import mongoose from 'mongoose'
-await mongoose.connect(process.env.MONGGO_URL).then(() => {
+await mongoose.connect(process.env.MONGO_URL).then(() => {
     console.log('Connected database!')
 })
 import RootRouter from './routes/index.js'
